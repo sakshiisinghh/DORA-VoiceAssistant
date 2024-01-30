@@ -14,11 +14,6 @@ The overall system design consists of following phases:
 (c) Execution of Python script
 (d) Generating speech from the processed text output
 
-In the first phase, the data is collected in the form of speech through a microphone and stored as an input for the next phase for processing. The voice commands are recognized through 
-google Speech Recognition module which has the ability to recognize a word or phrase and convert them into machine language. In the second phase, the input voice is continuously 
-processed using the recognize_google function to convert the input Speech to text. In the next phase the converted text is analysed and processed using Python Script to identify 
-the response to be given for the command by matching with keywords. Finally once the response is identified, output is generated from simple text to speech conversion using the gtts 
-module and response is given through the speaker.
 
 ## Screenshots of the Voice Assistant
 ![1](https://github.com/sakshiisinghh/DORA-VoiceAssistant/assets/87891878/c659ca5f-7430-473a-8b4a-3461c3dfcffc)
