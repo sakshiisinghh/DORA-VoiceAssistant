@@ -47,13 +47,13 @@ count_wake_button = 0
 is_on = True
 wake_word = 'dora'
 
-path2Notes = r"C://Users//Pakhi//Documents//Dora//Notes"
+path2Notes = r"C://Users//Sakshi//Documents//Dora//Notes"
 if (os.path.isdir(path2Notes)):
     files = os.listdir(path2Notes)
 else:
     files = []
 
-path2Screenshots = r"C://Users//Pakhi//Documents//Dora//Screenshots"
+path2Screenshots = r"C://Users//Sakshi//Documents//Dora//Screenshots"
 if (os.path.isdir(path2Screenshots)):
     ss = os.listdir(path2Screenshots)
 else:
@@ -786,8 +786,8 @@ def respond(voice_data):
         elif there_exists(["capture","my screen","screenshot"]) and "photo" not in voice_data:
             time.sleep(2)
             myScreenshot = pyautogui.screenshot()
-            path = r"C://Users//Pakhi//Documents//Dora"
-            path1 = r"C://Users//Pakhi//Documents//Dora//Screenshots"
+            path = r"C://Users//Sakshi//Documents//Dora"
+            path1 = r"C://Users//Sakshi//Documents//Dora//Screenshots"
             today = datetime.datetime.now()
             date = today.strftime("%b%d%Y")
             time1=datetime.datetime.now().strftime("%H%M%S")
@@ -850,7 +850,7 @@ def respond(voice_data):
         #play music
         elif there_exists(["play music","play song","play a song"]) and there_does_not_exist(["youtube"]):  
             engine_speak("Here you go with music")
-            music_dir = "C://Users//Pakhi//Music//Video Projects"
+            music_dir = "C://Users//Sakshi//Music//Video Projects"
             songs = os.listdir(music_dir)
             print(songs)   
             os.startfile(os.path.join(music_dir, songs[random.randint(0,len(songs)-1)]))
@@ -1205,8 +1205,8 @@ def respond(voice_data):
                 
         #make a note
         elif there_exists(["make a note","take a note","remember my idea","remember","note"]):
-            path = r"C://Users//Pakhi//Documents//Dora"
-            path2 = r"C://Users//Pakhi//Documents//Dora//Notes"
+            path = r"C://Users//Sakshi//Documents//Dora"
+            path2 = r"C://Users//Sakshi//Documents//Dora//Notes"
             engine_speak("What should i note")
             today = datetime.datetime.now()
             date = today.strftime("%b%d%Y")
